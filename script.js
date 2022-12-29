@@ -4,10 +4,10 @@ const buttonGravar = document.querySelector('#button');
 const msgError = document.querySelector('.msg');
 const ulList = document.querySelector('.list');
 const buttonClear = document.querySelector('#buttonLimpar');
+const buttonDelete = document.querySelector('#deleteTask');
 
 
 function addTask() {
-
 
     if (inputName.value === "" ) {
         msgError.textContent = "Digite a tarefa";
@@ -16,7 +16,10 @@ function addTask() {
         setTimeout (() => {
         msgError.textContent = "";
         msgError.classList = "";
-    }, 3000)};
+
+    }, 3000)
+       
+};
     
     const li = document.createElement("li");
         li.classList = "ulList";
@@ -25,14 +28,32 @@ function addTask() {
         ulList.appendChild(li);
         inputName.value = "";
 
-
 }
 
 
 function clearInput(){
     const textValue = inputName.value;
+
+    if(inputName.value == "")
+    msgError.textContent = "Tarefa vazia";
+    msgError.classList = "error";
+    
+    setTimeout (() => {
+    msgError.textContent = "";
+    msgError.classList = "";
+
+}, 3000)
+
+
     document.getElementById('name').value = "";
 }
 
-
-
+function deleteTask(){
+   
+    
+    let remove = document.querySelector('ulList ');
+ 
+   ulList.innerHTML = ""
+    
+  
+}
