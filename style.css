@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(10, 157, 96);
+}
+.container{
+    display: grid;
+    justify-items: center;
+    padding-top: 55px;
+    gap: 10px;
+}
+.button{
+    display: flex;
+    gap: 25px;
+    padding-top: 25px;
+
+}
+.error {
+    background: rgb(116, 33, 3);
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+  }
+  .list{
+    list-style: none;
+  }
+  .ulList{
+    text-decoration: none;
+    list-style: none;
+  }
+#button{
+    display: flex;
+    gap:15px;
+    border-radius: 5px;
+    width: 55px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: wheat;
+    height: 30px;
+}
+#buttonLimpar{
+    display: flex;
+    gap:15px;
+    border-radius: 5px;
+    width: 55px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: wheat;
+    height: 30px;
+}
