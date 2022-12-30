@@ -27,10 +27,14 @@ body{
   }
   .list{
     list-style: none;
+    justify-content: space-between;
   }
   .ulList{
     text-decoration: none;
     list-style: none;
+    justify-content: space-between;
+    gap: 35px;
+    margin: 10px;
   }
 #button{
     display: flex;
@@ -64,4 +68,8 @@ body{
     background-color: black;
     color: wheat;
     height: 30px;
+}
+li{
+    display: flex;
+    justify-content: space-between;
 }
