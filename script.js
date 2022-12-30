@@ -39,7 +39,7 @@ if(inputName.value !=''){
     
    
       deleteButton.classList.add("material-symbols-outlined");
-      deleteButton.innerText = "delete"; 
+      deleteButton.innerHTML = "delete"; 
       li.appendChild(deleteButton);
       deleteButton.addEventListener('click', () => {
       li.remove();
