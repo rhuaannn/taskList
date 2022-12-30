@@ -7,8 +7,10 @@ const buttonClear = document.querySelector('#buttonLimpar');
 const buttonDelete = document.querySelector('#deleteTask');
 const deleteButton = document.querySelector('.material-symbols-outlined');
 
-function addTask() {
 
+ addTask=()=> {
+ 
+    
     if (inputName.value === "" ) {
         msgError.textContent = "Digite a tarefa";
         msgError.classList = "error";
@@ -20,8 +22,12 @@ function addTask() {
     }, 3000)
        
 };
+
+if(inputName.value !=''){
     
     const li = document.createElement("li");
+
+   
         li.classList = "ulList";
         li.innerHTML = ` ${inputName.value}`;
 
@@ -29,21 +35,22 @@ function addTask() {
         inputName.value = "";
 
     const deleteButton = document.createElement("li");
+
     
-      
+   
       deleteButton.classList.add("material-symbols-outlined");
       deleteButton.innerText = "delete"; 
       li.appendChild(deleteButton);
       deleteButton.addEventListener('click', () => {
-        li.remove();
+      li.remove();
       });
 
 
 };
+};
 
 
-
-function clearInput(){
+ clearInput=()=>{
     const textValue = inputName.value;
 
     if(inputName.value == "")
@@ -60,8 +67,18 @@ function clearInput(){
     document.getElementById('name').value = "";
 }
 
-function deleteTask(){
-   
+
+
+ deleteTask=()=>{
+    if(ulList.value !='')
+    msgError.textContent = "Tarefa vazia";
+    msgError.classList = "error";
+    
+    setTimeout (() => {
+    msgError.textContent = "";
+    msgError.classList = "";
+
+}, 3000)
     
     let remove = document.querySelector('ulList ');
  
