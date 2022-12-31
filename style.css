@@ -27,14 +27,19 @@ body{
   }
   .list{
     list-style: none;
-    justify-content: space-between;
+    
+   
+    
   }
   .ulList{
     text-decoration: none;
     list-style: none;
-    justify-content: space-between;
+    justify-content:space-between;
     gap: 35px;
     margin: 10px;
+   
+   
+    flex-wrap: nowrap;
   }
 #button{
     display: flex;
@@ -73,3 +78,7 @@ li{
     display: flex;
     justify-content: space-between;
 }
+
+.done {
+    text-decoration: line-through;
+  }
