@@ -57,9 +57,11 @@
             deleteButton.innerHTML = "delete"; 
             li.appendChild(deleteButton);
             deleteButton.addEventListener('click', () => {
-            li.remove();
+
+              if(confirm("Você realmente quer apagar a tarefa?")){
+                return li.remove();              }
             });
-            
+           
 
             };
 
