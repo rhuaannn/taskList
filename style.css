@@ -2,10 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Abril Fatface', cursive;
+
 }
 
 body{
-    background-color: rgb(10, 157, 96);
+  background-color: rgb(73, 23, 34);
+}
+.tarefaInput{
+    background-image: linear-gradient(to bottom, rgb(31, 143, 196), steelblue, turquoise);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
 }
 .container{
     display: grid;
@@ -18,6 +27,27 @@ body{
     gap: 25px;
     padding-top: 25px;
 
+}
+#button:hover{
+    background-image: linear-gradient(to bottom, rgb(31, 143, 196), steelblue, turquoise);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgb(6, 82, 56);
+  color: black;
+}
+#buttonLimpar:hover{
+    background-image: linear-gradient(to bottom, rgb(31, 143, 196), steelblue, turquoise);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgb(196, 62, 28);
+  color: black;
+}
+#buttonDelete:hover{
+    background-image: linear-gradient(to bottom, rgb(31, 143, 196), steelblue, turquoise);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgb(114, 21, 75);
+  color: black;
 }
 .error {
     background: rgb(116, 33, 3);
